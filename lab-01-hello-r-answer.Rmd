@@ -4,8 +4,7 @@ author: "Yoo RI"
 date: "Insert date here"
 output: 
   html_document: 
-    fig_width: 6
-    fig_height: 3
+    theme: journal
 ---
 
 
@@ -14,7 +13,7 @@ output:
 ```{r load-packages, message=FALSE}
 library(tidyverse) 
 library(datasauRus)
-
+library(dplyr)
 ```
 
 ## Exercises
@@ -30,7 +29,7 @@ help(datasaurus_dozen)
 View(datasaurus_dozen)
 str(datasaurus_dozen)
 ```
-
+ 13*2
 ### Exercise 2
 
 The answers for this Exercise are given for you below.
@@ -53,7 +52,7 @@ And next calculate the correlation between `x` and `y` in this dataset:
 dino_data %>%
   summarize(r = cor(x, y))
 ```
-
+r= -0.064
 ### Exercise 3
 
 Add code and narrative as needed.
@@ -78,6 +77,7 @@ star_data %>%
   summarize(r = cor(x, y))
 
 ```
+r=-0.062 similar, but this has less absolute value. 
 
 ### Exercise 4
 
@@ -100,7 +100,8 @@ circle_data %>%
 
 
 ```
-
+r=-0.068
+similar. 
 ### Exercise 5
 plot together
 ```{r plot}
