@@ -1,6 +1,6 @@
 ---
 title: "Lab 01 - Hello R"
-author: "YooRI"
+author: "Yoo RI"
 date: "Insert date here"
 output: 
   html_document: 
@@ -8,7 +8,6 @@ output:
     fig_height: 3
 ---
 
-Yoori's review / additional comments are in the bottom 
 
 ## Load packages and data
 
@@ -22,11 +21,15 @@ library(datasauRus)
 
 ### Exercise 1
 
+```{r}
+
+datasaurus_dozen %>%
+  count(dataset) %>%
+  print(13)
 help(datasaurus_dozen)
-
-
 View(datasaurus_dozen)
 str(datasaurus_dozen)
+```
 
 ### Exercise 2
 
